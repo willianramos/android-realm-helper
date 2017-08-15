@@ -10,16 +10,20 @@ Install
  - Import RealmManager.java to your project;
  - Create a class to extends Application, and identify in the AndroidManifest.xml. See the example: App.java
 
-Use
+Usage
 -------
 **Add**:
 User user = new User();
+
 user.name = "John Test";
+
 user.id = "1";
+
 RealmManager.add(user);
 
 **List**:
 RealmManager.list(User.class);
+
 
 **Find By**:
 RealmManger.findBy("id", "1", User.class);
